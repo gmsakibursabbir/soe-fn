@@ -146,6 +146,36 @@ const devsswiper = new Swiper(".devSwiper", {
     },
   },
 });
+// swiper slider two
+const servicesSwiperTwo = new Swiper(".servicesSwiperTwo", {
+  slidesPerView: "auto",
+  spaceBetween: 12,
+  loop: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: "auto",
+    },
+    768: {
+      slidesPerView: 2.2,
+    },
+    1024: {
+      slidesPerView: 2.3,
+    },
+    1280: {
+      slidesPerView: 3.2,
+    },
+  },
+});
 
 window.addEventListener("DOMContentLoaded", function () {
   const frecuentesswiper = new Swiper(".frecuentesSwiper", {
