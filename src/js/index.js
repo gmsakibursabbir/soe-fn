@@ -90,6 +90,15 @@ const servicesSwiper = new Swiper(".servicesSwiper", {
   slidesPerView: "auto",
   spaceBetween: 12,
   loop: true,
+  grabCursor: true,
+  mousewheel: {
+    forceToAxis: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
   navigation: {
     nextEl: ".swiper-next",
     prevEl: ".swiper-prev",
@@ -102,30 +111,6 @@ const servicesSwiper = new Swiper(".servicesSwiper", {
       slidesPerView: 2.2,
     },
     1024: {
-      slidesPerView: 3.2,
-    },
-  },
-});
-// swiper slider two
-const servicesSwiperTwo = new Swiper(".servicesSwiperTwo", {
-  slidesPerView: "auto",
-  spaceBetween: 12,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-next",
-    prevEl: ".swiper-prev",
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: "auto",
-    },
-    768: {
-      slidesPerView: 2.2,
-    },
-    1024: {
-      slidesPerView: 2.3,
-    },
-    1280: {
       slidesPerView: 3.2,
     },
   },
@@ -136,6 +121,11 @@ const devsswiper = new Swiper(".devSwiper", {
   slidesPerView: "auto",
   spaceBetween: 12,
   loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
   navigation: {
     nextEl: ".swiperdev-next",
     prevEl: ".swiperdev-prev",
@@ -162,8 +152,9 @@ window.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 12,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false,
+      pauseOnMouseEnter: true,
     },
     navigation: {
       nextEl: ".frecuentes-next",
