@@ -121,6 +121,7 @@ const devsswiper = new Swiper(".devSwiper", {
   slidesPerView: "auto",
   spaceBetween: 12,
   loop: true,
+  grabCursor: true,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
@@ -151,6 +152,7 @@ window.addEventListener("DOMContentLoaded", function () {
     slidesPerView: "auto",
     spaceBetween: 12,
     loop: true,
+    grabCursor: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
